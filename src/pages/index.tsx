@@ -80,10 +80,10 @@ export default function SignUpPage() {
         </Typography>
       <TextField
          placeholder="password"
-         type="password"
-          name="password"
-          value={input.password} 
-      onChange={handleChange}
+        type="password" 
+        name="password" 
+        value={input.password} 
+        onChange={handleChange}
         />
          </FormControl>
          <Button type='submit'

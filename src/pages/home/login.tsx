@@ -91,7 +91,7 @@ import {
         background: "#d613bc",
        "&:hover": { backgroundColor: "#d613bc", 
        color: "white" },}}
-       >Signup</Button>
+       >Login</Button>
            </Stack>
         </Box>
       </>
