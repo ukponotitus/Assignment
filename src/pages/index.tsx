@@ -10,6 +10,7 @@ import FormControl from '@mui/material/FormControl';
 import {ChangeEvent, FormEvent, useState} from "react";
 import { useRouter } from "next/router";
 import axios from 'axios';
+import Link from 'next/link'
 
 type State = {
   password: string;
@@ -59,6 +60,7 @@ export default function SignUpPage() {
         mt:"30px"}}>
         Sign up 
       </Typography>
+      <Stack>
       <Stack  component="form" spacing={2} onSubmit={handleSubmit} 
        mx="auto"  
       sx={{
@@ -92,6 +94,19 @@ export default function SignUpPage() {
      "&:hover": { backgroundColor: "#d613bc", 
      color: "white" },}}
      >Signup</Button>
+
+     <Box sx={{mx:"auto",
+    color:" white",
+    background: "black",
+   "&:hover": { backgroundColor: "black", 
+   color: "white" },
+   width:"30%"
+   }}>
+    <Link href='/home/login'>
+         <Button sx={{color:"white"}}>go to signin</Button>
+         </Link>
+     </Box>
+         </Stack>
          </Stack>
       </Box>
     </>

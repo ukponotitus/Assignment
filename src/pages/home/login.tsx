@@ -10,6 +10,8 @@ import {
   import {ChangeEvent, FormEvent, useState} from "react";
 //   import { useRouter } from "next/router";
   import axios from 'axios';
+  import Link from 'next/link'
+
   
   type State = {
     password: string;
@@ -92,6 +94,19 @@ import {
        "&:hover": { backgroundColor: "#d613bc", 
        color: "white" },}}
        >Login</Button>
+
+       <Box sx={{mx:"auto",
+        color:" white",
+        background: "black",
+        "&:hover": { backgroundColor: "black", 
+        color: "white" },
+        width:"30%", 
+        marginLeft:"20px"
+        }}>
+    <Link href='/'>
+         <Button sx={{color:"white"}}>go to Signup</Button>
+         </Link>
+     </Box>
            </Stack>
         </Box>
       </>
